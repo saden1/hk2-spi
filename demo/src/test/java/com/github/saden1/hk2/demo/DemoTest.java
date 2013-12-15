@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright 2013 Sharmarke Aden <www.github.com/saden1>.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,9 +29,6 @@ public class DemoTest {
 
     @Test
     public void testSomeMethod() {
-//        ServiceFactory factory = ServiceFactory.getInstance();
-//        TestContract contract = factory.getService(TestContract.class);
-//        assertThat(contract).isNotNull();
         ServiceLocator loader = ServiceLocatorUtilities.createAndPopulateServiceLocator();
         TestContract result = loader.getService(TestContract.class);
         assertThat(result).isNotNull();
